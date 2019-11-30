@@ -1,0 +1,323 @@
+body{
+     margin: 0;
+     width: 100%;
+     height: 100vh;
+     font-family: "Exo", sans-serif;
+     color: #fff;
+     /* background-color: black; */
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+
+ }
+
+ @keyframes gradientBG {
+     0% {
+         background-position: 0% 50%;
+     }
+     50% {
+         background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+
+ .container {
+     width: 100%;
+     position: absolute;
+     top: 35%;
+     text-align: center;
+ }
+
+ h1{
+   cursor: default;
+   position: absolute;
+   top: 3px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 100px;
+   /* margin: auto; */
+   display: block;
+
+
+
+
+  /* -webkit-animation: bounce .3s ease infinite alternate;*/
+
+    font-family: Comic Sans MS;
+   font-size: 80px;
+   color: #3BDD00;
+   text-align: center;
+   line-height: 100px;
+   text-shadow: 0 1px 0 #CCC,
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 transparent,
+                0 7px 0 transparent,
+                0 8px 0 transparent,
+                0 9px 0 transparent,
+                0 10px 10px rgba(0, 0, 0, .6);
+
+ }
+ /* ANIMATION */
+ @-webkit-keyframes bounce {
+   100% {
+     top: -30px;
+
+     text-shadow: 0 1px 0 #CCC,
+                  0 2px 0 #CCC,
+                  0 3px 0 #CCC,
+                  0 4px 0 #CCC,
+                  0 5px 0 #CCC,
+                  0 6px 0 #CCC,
+                  0 7px 0 #CCC,
+                  0 8px 0 #CCC,
+                  0 9px 0 #CCC,
+                  0 30px 30px rgba(0, 0, 0, .3);
+   }
+ }
+
+ h3 {
+     font-family:Chalkduster, fantasy;
+     color: black;
+     font-weight: 100;
+     font-weight: bold;
+     background: linear-gradient(to right, #40FF00 , yellow);
+     text-align: center;
+
+}
+ }
+
+ h5 {
+     color:#eee;
+     font-weight:300;
+ }
+
+ a,
+ a:hover {
+     text-decoration: none;
+     color: #ddd;
+}
+.root{
+  display:flex;
+  flex-direction: row;
+
+}
+#myCanvas{
+  margin-left: auto;
+
+}
+.title{
+  text-align: center;
+  height: 250px;
+}
+.modal{
+  padding: 25px;
+  background-color: gold;
+  border: 0.5px solid black;
+  border-radius: 15px;
+  width:50%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color:black;
+
+}
+.modal2{
+  height: 600px;
+  width: 70%;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#miniCanvas{
+   /* width: 100%; */
+
+  /*background-color: rgb(0,0,0);*/
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btnBackMiniGame{
+font-family: Chalkduster, fantasy;
+display: flex;
+height: 200px;
+width: 130px;
+position: absolute;
+left: 15px;
+top: 300px;
+border-radius: 12px;
+}
+.btnResetMiniGame{
+  font-family: Chalkduster, fantasy;
+display: flex;
+height: 50px;
+width: 130px;
+position: absolute;
+right: 15;
+top: 300px;
+border-radius: 12px;
+}
+
+body {
+   background-color: #464646
+}
+
+.color-3{
+  stroke:#05ffa1;
+   transform: translate3d(2px, 2px, 0);
+    stroke-width: 6px;
+}
+
+.color-1{
+  stroke:#ffffff;
+  stroke-width: 8px;
+}
+
+ .color-2{stroke:#01cdfe;
+        transform: translate3d(2px, 2px, 0);
+   stroke-width: 8px;
+   z-index:9999;
+}
+
+.divButton{
+  font-family: Chalkduster, fantasy;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color:rgb(0, 0, 0);
+  background:rgb(230, 216, 3);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.divButton2{
+  font-family: Chalkduster, fantasy;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color:#ff10ff;
+  background:black;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+p{
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.divButton:active {
+    color: #000
+}
+
+.divButton:active:after {
+    background: transparent;
+}
+
+.divButton:hover:before {
+    opacity: 1;
+}
+
+.divButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.divButton2:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.divButton2:active {
+    color: #000
+}
+
+.divButton2:active:after {
+    background: transparent;
+}
+
+.divButton2:hover:before {
+    opacity: 1;
+}
+
+.divButton2:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
