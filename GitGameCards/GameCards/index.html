@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+     <link rel="stylesheet" type="text/css" href="./styles.css">
+     <script src="./data2.js" charset="utf-8"></script>
+     <script src="./main2.js" charset="utf-8"></script>
+     <script src="./miniGame.js" charset="utf-8"></script>
+     <script type="text/javascript">
+       window.onload=function(){
+         create();
+       }
+     </script>
+
+
+  </head>
+  <body>
+    <div class="title"  >
+
+      <h1 id="tituloGeneral" class="animated jello">¿Le EnTrAs o Te RaJaS?</h1>
+
+    </div>
+    <audio id="audio" src="./assets/miniGame/trackMiniGame.mp3"></audio>
+    <div id="root" class="root" >
+      <!-- style="display:none;" -->
+      <canvas id="myCanvas" width="400" height="500">
+      </canvas>
+
+      <div id="modal" class="modal">
+        <div id="modalTop" style="visibility:hidden">
+          <h2 id="tituloAlerta"></h2>
+          <div>
+            <h3>Información del Juego</h3>
+
+            <p id="alerta"></p>
+          </div>
+        <div>
+          <h3> Modo de Juego </h3>
+          <p id="alerta2"></p>
+        </div>
+        <div>
+          <div id="divButton" class="divButton2" style="visibility:hidden;"><p> Jugar MiniJuego</p> </div>
+        </div>
+      </div>
+      <div id="modalBottom" style="display:flex;visibility:hidden;" >
+        <canvas id="canvasInte" class="animated infinite pulse "  width=500 height=500 style="border-radius: 12px;margin-left: auto;margin-right: auto;"><!--width=500 height=500-->
+        </canvas>
+      </div>
+      </div>
+
+    </div>
+    <div  id="root2" style="position:relative;top:0px;left:0px; display:none;">
+      <div id="back" class="btnBackMiniGame divButton"><p>Back</p></div>
+        <div id="modal2" class="modal2" style="background-image: url(./assets/miniGame/background4.png);  background-repeat:no-repeat; background-position:center; background-size: cover;">
+          <canvas id="miniCanvas" width="800" height="600" ><!---->
+        </div>
+      <div id="reset" class="btnResetMiniGame divButton"><p>Play Again!!</p></div>
+    </div>
+
+
+  </body>
+</html>
