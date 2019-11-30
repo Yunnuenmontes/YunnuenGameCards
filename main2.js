@@ -16,7 +16,7 @@ console.log(ctx2)
   return new Promise((resolve)=>{
 
     question=new Image(250,250);
-    question.addEventListener('loadend',()=>{
+    question.addEventListener('load',()=>{
       ctx2.drawImage(question,50,0,400,400)
       resolve();
     })
